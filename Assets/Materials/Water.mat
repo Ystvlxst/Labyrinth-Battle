@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: efcaf526ceb1f4efd9eb4e4c30c6ade6, type: 3}
+  m_ShaderKeywords: _COLORMODE_LINEAR _FOAMMODE_TEXTURE _OPAQUE_OFF _WAVEMODE_GRID
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseColorTexture:
+        m_Texture: {fileID: 2800000, guid: 9a41bde7dc40164468128f7eb23831fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ColorGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 442fa9b8b804d49178941d8d578e08c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BoundSize: 50
+    - _BoundSizeX: 50
+    - _BoundSizeZ: 1
+    - _BumpScale: 1
+    - _ColorMode: 0
+    - _CrestSharpness: 0.1
+    - _CrestSize: 0.1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DrawDistance: 125
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _FadeDistance: 0.5
+    - _FoamAmount: 0.3
+    - _FoamDepth: 0.5
+    - _FoamDirection: 1
+    - _FoamMode: 2
+    - _FoamNoiseAmount: 1
+    - _FoamScale: 0.03
+    - _FoamSharpness: 0.5
+    - _FoamSpeed: 0.11
+    - _FoamStretchX: 1
+    - _FoamStretchY: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _GrassHeight: 4
+    - _GrassWidth: 1
+    - _LightContribution: 0
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _Opaque: 0
+    - _QueueOffset: 0
+    - _RandomNormal: 23
+    - _ReceiveShadows: 1
+    - _RefractionAmplitude: 0.01
+    - _RefractionFrequency: 35
+    - _RefractionScale: 1
+    - _RefractionSpeed: 0.1
+    - _SampleGI: 0
+    - _ShadowStrength: 0.35
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WaterClearness: 0.1
+    - _WaterDepth: 5
+    - _WaveAmplitude: 0.6
+    - _WaveDirection: 0.08
+    - _WaveFrequency: 1
+    - _WaveMode: 2
+    - _WaveNoise: 0.778
+    - _WaveSpeed: 0.6
+    - _WindAFrequency: 4
+    - _WindAIntensity: 1
+    - _WindBFrequency: 2
+    - _WindBIntensity: 0.25
+    - _WindCFrequency: 2
+    - _WindCIntensity: 0.125
+    - _WindFrequency: 4
+    - _WindIntensity: 1
+    - _WorkflowMode: 1
+    - _ZWrite: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BoundSize: {r: 176.7767, g: 176.7767, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorDeep: {r: 0.11764705, g: 0.6467175, b: 1, a: 1}
+    - _ColorShallow: {r: 0.26274508, g: 0.6626461, b: 0.972549, a: 0.8}
+    - _CrestColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+    - _GroundColor: {r: 0.038447853, g: 0.33962262, b: 0, a: 1}
+    - _LossyBoundSize: {r: 176.7767, g: 176.7767, b: 0, a: 0}
+    - _PivotPosWS: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _WindADirection: {r: 0.1, g: 0.1, b: 0, a: 1}
+    - _WindATiling: {r: 0.1, g: 0.1, b: 0, a: 1}
+    - _WindAWrap: {r: 0.5, g: 0.5, b: 0, a: 1}
+    - _WindBDirection: {r: 0.35, g: 0, b: 0, a: 1}
+    - _WindBTiling: {r: 0.37, g: 3, b: 0, a: 1}
+    - _WindBWrap: {r: 0.5, g: 0.5, b: 0, a: 1}
+    - _WindCDirection: {r: 0.7, g: -0.1, b: 0, a: 1}
+    - _WindCTiling: {r: 0.77, g: 3, b: 0, a: 1}
+    - _WindCWrap: {r: 0.5, g: 0.5, b: 0, a: 1}
+  m_BuildTextureStacks: []

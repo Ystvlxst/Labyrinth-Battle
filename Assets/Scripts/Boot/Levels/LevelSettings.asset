@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd6bf9554595eb42839198917808cb6, type: 3}
+  m_Name: LevelSettings
+  m_EditorClassIdentifier: 
+  _levels:
+  - sceneAsset: {fileID: 102900000, guid: 54a6962877b884ffe8e21786a0a78663, type: 3}
+    scenePath: Assets/Scenes/1.unity
+  - sceneAsset: {fileID: 102900000, guid: 0c55b6b0b69a64ff0bd19636909b3034, type: 3}
+    scenePath: Assets/Scenes/2.unity
+  - sceneAsset: {fileID: 102900000, guid: f256eb6430e0db545bc4b73b66cb3362, type: 3}
+    scenePath: Assets/Scenes/3.unity
+  - sceneAsset: {fileID: 102900000, guid: ce599091089fddc4dba696dcd3b0a587, type: 3}
+    scenePath: Assets/Scenes/4.unity
+  - sceneAsset: {fileID: 102900000, guid: ab0966d264b474e0099deed74548c8b4, type: 3}
+    scenePath: Assets/Scenes/5.unity
+  - sceneAsset: {fileID: 102900000, guid: 8fbc06ad70d20534ca952cad3094ee58, type: 3}
+    scenePath: Assets/Scenes/6.unity
+  - sceneAsset: {fileID: 102900000, guid: 0d7fc487cf26a2047878d96fd1cb72d9, type: 3}
+    scenePath: Assets/Scenes/7.unity
+  - sceneAsset: {fileID: 102900000, guid: 7663d01cbc7962c4999e0fdbf6c71a03, type: 3}
+    scenePath: Assets/Scenes/8.unity
+  - sceneAsset: {fileID: 102900000, guid: 1c0319eb76b4f5740a8c0c3e5e1fd7fd, type: 3}
+    scenePath: Assets/Scenes/9.unity
