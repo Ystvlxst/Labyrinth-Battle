@@ -16,11 +16,13 @@ public class FollowPlayerState : State
 
     private void Update()
     {
-        _agent.SetDestination(_player.position);
+        if(_agent.enabled == true)
+            _agent.SetDestination(_player.position);
     }
 
     private void OnDisable()
     {
-        _agent.SetDestination(transform.position);
+        if (_agent.enabled == true)
+            _agent.SetDestination(transform.position);
     }
 }

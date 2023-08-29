@@ -240,15 +240,12 @@ GameObject:
   - component: {fileID: 1265777951}
   - component: {fileID: 3131598589527182780}
   - component: {fileID: 3131598589527182657}
-  - component: {fileID: 3131598589527182781}
-  - component: {fileID: 3172932294073532939}
   - component: {fileID: 8271507986393908683}
   - component: {fileID: 5031526731278003381}
   - component: {fileID: 1892069483512972841}
   - component: {fileID: 2899015898150578573}
   - component: {fileID: 4650107886007668106}
   - component: {fileID: 2098909737502410011}
-  - component: {fileID: 1265777949}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -326,40 +323,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3131598589527182781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3131598589527182782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80fec099102d0e14a8f459c1c6fa954d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _puctureEvents: {fileID: 0}
-  _playerMovement: {fileID: 3131598589527182780}
-  _model: {fileID: 3131598589459724474}
-  _smokeEffectContainer: {fileID: 0}
-  _smokeEffect: {fileID: 8120546618078360971, guid: e735df61a62c34f7ebede156bf50e2fc, type: 3}
-  _renderer: {fileID: 6747546874341201954}
-  _targetColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
---- !u!114 &3172932294073532939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3131598589527182782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b83671d35179484b8445fe0f6256643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelEvents: {fileID: 0}
-  _cuttingEffectTemplate: {fileID: 4422538043800441626, guid: d44a3cf32b2a541f8bb521119b10bc9f, type: 3}
-  _effectContainer: {fileID: 0}
 --- !u!65 &8271507986393908683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -444,20 +407,6 @@ MonoBehaviour:
   _starCounter: {fileID: 4650107886007668106}
   _enemyContainer: {fileID: 0}
   _findKeyEffect: {fileID: 0}
---- !u!114 &1265777949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3131598589527182782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e101ec36368a7d044bcef43ab5373114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _trailRendererTemplate: {fileID: 5896385540633024253, guid: c9e71717c33f2d84ca72a722bc62ccff, type: 3}
-  _currentTrailRenderer: {fileID: 0}
 --- !u!1 &3131598589907630310
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,16 +749,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7811917912703486611, guid: c3e8e55f0fb694547af284b5d6c0aa05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c3e8e55f0fb694547af284b5d6c0aa05, type: 3}
 --- !u!4 &5615767722663633741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859019131989905762, guid: c3e8e55f0fb694547af284b5d6c0aa05, type: 3}
-  m_PrefabInstance: {fileID: 1045260441970651695}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &6747546874341201954 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5991363055895325197, guid: c3e8e55f0fb694547af284b5d6c0aa05, type: 3}
   m_PrefabInstance: {fileID: 1045260441970651695}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1835051968945470535

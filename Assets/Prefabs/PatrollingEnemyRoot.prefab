@@ -417,7 +417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6285917096888431045
 Transform:
   m_ObjectHideFlags: 0
@@ -601,7 +601,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e574b68eb4a941bb90758e7bcc828e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _health: 30
   _firstState: {fileID: 4000103566963201955}
+  _agent: {fileID: 6593887304180667455}
+  _hitEffect: {fileID: 19853630, guid: f563a43ef6da8ce43b59040b834b597d, type: 3}
+  _dieEffect: {fileID: 19872744, guid: cca79b260878071418290367024a6716, type: 3}
 --- !u!114 &4000103566963201955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,19 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b903dfc294824aba75f8b28a2261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pairs:
-  - <State>k__BackingField: {fileID: 4000103566963201955}
-    <GlowMaterial>k__BackingField: {fileID: 2100000, guid: 85a21f65ba1797b45a224ee37ab8af8a, type: 2}
-    <EyeMaterial>k__BackingField: {fileID: 2100000, guid: 47c5f0ff886b1534f92ebf28ac0a21de, type: 2}
-  - <State>k__BackingField: {fileID: 5545723573114248634}
-    <GlowMaterial>k__BackingField: {fileID: 2100000, guid: ca1b48caf97b3a14e849ff2bf2e15903, type: 2}
-    <EyeMaterial>k__BackingField: {fileID: 2100000, guid: 1cff7b8beab949d46a5bb2dde5fedb18, type: 2}
-  - <State>k__BackingField: {fileID: 1875723885030877144}
-    <GlowMaterial>k__BackingField: {fileID: 2100000, guid: e748b479ecac76844848391af9bad0ba, type: 2}
-    <EyeMaterial>k__BackingField: {fileID: 2100000, guid: 1967f052c9fcc55459355bb1d44127c9, type: 2}
-  - <State>k__BackingField: {fileID: 5545723573114248634}
-    <GlowMaterial>k__BackingField: {fileID: 2100000, guid: ca1b48caf97b3a14e849ff2bf2e15903, type: 2}
-    <EyeMaterial>k__BackingField: {fileID: 2100000, guid: 1cff7b8beab949d46a5bb2dde5fedb18, type: 2}
+  _pairs: []
 --- !u!114 &1157481261434505785
 MonoBehaviour:
   m_ObjectHideFlags: 0
