@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 2899015898150578573}
   - component: {fileID: 4650107886007668106}
   - component: {fileID: 2098909737502410011}
+  - component: {fileID: 3951583538171726307}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -407,6 +408,26 @@ MonoBehaviour:
   _starCounter: {fileID: 4650107886007668106}
   _enemyContainer: {fileID: 0}
   _findKeyEffect: {fileID: 0}
+--- !u!114 &3951583538171726307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3131598589527182782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a2d2d4d4efc47d7aa7901b58878e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletTamplate: {fileID: 9207575592670018245, guid: 2fa1d5d24e25a438bbc3d761e99f64fe, type: 3}
+  _shootDelay: 1
+  _shootForce: 115
+  _shootFieldViewRadius: 40
+  _enemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3131598589907630310
 GameObject:
   m_ObjectHideFlags: 0
