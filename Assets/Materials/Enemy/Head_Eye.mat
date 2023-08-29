@@ -15,14 +15,18 @@ MonoBehaviour:
   version: 4
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Head_Eye
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: _CELPRIMARYMODE_NONE _TEXTUREBLENDINGMODE_MULTIPLY _UNITYSHADOWMODE_NONE
+  m_ValidKeywords:
+  - _TEXTUREBLENDINGMODE_MULTIPLY
+  m_InvalidKeywords:
+  - _CELPRIMARYMODE_NONE
+  - _UNITYSHADOWMODE_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -153,6 +157,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
@@ -234,7 +239,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.9811321, g: 0.75240064, b: 0, a: 1}
-    - _Color: {r: 0.3266593, g: 0.3266593, b: 0.3266593, a: 1}
+    - _Color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
     - _ColorDim: {r: 0.017211765, g: 0.027314806, b: 0.07450981, a: 1}
     - _ColorDimCurve: {r: 0.20754719, g: 0.20754719, b: 0.49803922, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}

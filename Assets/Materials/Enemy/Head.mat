@@ -15,14 +15,18 @@ MonoBehaviour:
   version: 4
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Head
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: _CELPRIMARYMODE_SINGLE _TEXTUREBLENDINGMODE_MULTIPLY _UNITYSHADOWMODE_NONE
+  m_ValidKeywords:
+  - _CELPRIMARYMODE_SINGLE
+  - _TEXTUREBLENDINGMODE_MULTIPLY
+  m_InvalidKeywords:
+  - _UNITYSHADOWMODE_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -153,6 +157,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
@@ -176,7 +181,7 @@ Material:
     - _FlatRimSize: 0.5
     - _FlatSpecularEdgeSmoothness: 0
     - _FlatSpecularSize: 0.1
-    - _Flatness: 0.33
+    - _Flatness: 0.579
     - _FlatnessExtra: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
@@ -208,9 +213,9 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimEnabled: 0
-    - _SelfShadingSize: 0.175
+    - _SelfShadingSize: 0.154
     - _SelfShadingSizeExtra: 0.6
-    - _ShadowEdgeSize: 0.322
+    - _ShadowEdgeSize: 0.17
     - _ShadowEdgeSizeExtra: 0.05
     - _Smoothness: 0.5
     - _Smoothness0: 0.5
@@ -234,8 +239,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.417, g: 0.3753, b: 0.556, a: 1}
-    - _Color: {r: 0.3266593, g: 0.3266593, b: 0.3266593, a: 1}
-    - _ColorDim: {r: 0, g: 0.0018867974, b: 0.009433985, a: 1}
+    - _Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+    - _ColorDim: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
     - _ColorDimCurve: {r: 0.20754719, g: 0.20754719, b: 0.49803922, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimSteps: {r: 0.14208794, g: 0.2272863, b: 0.2924528, a: 0.85056}

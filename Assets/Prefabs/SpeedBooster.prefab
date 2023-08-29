@@ -28,9 +28,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8563928933147473638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
   m_LocalPosition: {x: -31.3, y: 2.62, z: -9.3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5001745488446776623}
   m_Father: {fileID: 0}
@@ -55,6 +56,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -117,7 +119,7 @@ MonoBehaviour:
   _light: {fileID: 1886236909724424909}
 --- !u!95 &8563928933147473636
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,6 +132,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -335,13 +338,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c4900cbf5dd07943aca195c65486621, type: 3}
---- !u!4 &5001745488446776623 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4022782005827839271, guid: 0c4900cbf5dd07943aca195c65486621, type: 3}
-  m_PrefabInstance: {fileID: 8266937584190210056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886236909724424909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7536577812424104645, guid: 0c4900cbf5dd07943aca195c65486621, type: 3}
+  m_PrefabInstance: {fileID: 8266937584190210056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5001745488446776623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4022782005827839271, guid: 0c4900cbf5dd07943aca195c65486621, type: 3}
   m_PrefabInstance: {fileID: 8266937584190210056}
   m_PrefabAsset: {fileID: 0}

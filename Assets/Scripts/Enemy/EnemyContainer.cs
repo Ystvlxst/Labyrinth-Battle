@@ -3,7 +3,6 @@ using UnityEngine;
 public class EnemyContainer : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    [SerializeField] private EndLevelTrigger _endLevelTrigger;
     
     private Enemy[] _enemies;
     private SignalizationTransition[] _signalizationTransitions;
@@ -19,14 +18,14 @@ public class EnemyContainer : MonoBehaviour
 
     private void OnEnable()
     {
-        _endLevelTrigger.Won += DisableEnemies;
-        _endLevelTrigger.Lost += DisableEnemies;
+        //_endLevelTrigger.Won += DisableEnemies;
+        //_endLevelTrigger.Lost += DisableEnemies;
     }
     
     private void OnDisable()
     {
-        _endLevelTrigger.Won -= DisableEnemies;
-        _endLevelTrigger.Lost -= DisableEnemies;
+        //_endLevelTrigger.Won -= DisableEnemies;
+        //_endLevelTrigger.Lost -= DisableEnemies;
     }
 
     public void Signal()
