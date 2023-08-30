@@ -37,11 +37,13 @@ public class Enemy : MonoBehaviour
             Transit(nextState);
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out Player player))
             player.Die();
     }
+    */
 
     private void Transit(State nextState)
     {

@@ -6,9 +6,10 @@ public class OutputCamera : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out PlayerMovement player))
+        if (other.TryGetComponent(out Player player))
         {
-            _cameraBlend.PlayerFollow();
+            //_cameraBlend.PlayerFollow();
+            player.EnableShooting();
         }
     }
 }
