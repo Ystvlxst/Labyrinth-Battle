@@ -8,7 +8,6 @@ public class OutputCamera : MonoBehaviour
     {
         if (other.TryGetComponent(out Player player))
         {
-            //_cameraBlend.PlayerFollow();
             player.EnableShooting();
         }
     }
