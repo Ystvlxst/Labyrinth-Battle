@@ -5,8 +5,8 @@ using UnityEngine.AI;
 public class FollowPlayerState : State
 {
     [SerializeField] private Enemy _enemy;
-    private Transform _player => _enemy.Player.transform;
 
+    private Transform _player => _enemy.Player.transform;
     private NavMeshAgent _agent;
 
     private void Awake()

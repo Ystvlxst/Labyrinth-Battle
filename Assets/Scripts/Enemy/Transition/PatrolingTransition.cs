@@ -26,4 +26,9 @@ public class PatrolingTransition : Transition
 
         NeedTransit = true;
     }
+
+    public void Transit()
+    {
+        NeedTransit = true;
+    }
 }   

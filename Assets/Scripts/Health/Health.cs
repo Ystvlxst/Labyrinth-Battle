@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private float _health;
     [SerializeField] private NavMeshAgent _agent;
