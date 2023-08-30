@@ -7,10 +7,10 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private float _shootDelay;
     [SerializeField] private float _shootForce;
     [SerializeField] private float _shootFieldViewRadius;
-    [SerializeField] private List<Enemy> _enemies;
+    [SerializeField] private List<EnemyHealth> _enemies;
 
     private float _timeToShoot;
-    private Enemy _nearestEnemy;
+    private EnemyHealth _nearestEnemy;
 
     private void Update()
     {
@@ -55,10 +55,8 @@ public class PlayerShooting : MonoBehaviour
             if (_timeToShoot <= 0)
             {
                 Bullet bullet = Instantiate(_bulletTamplate, transform.position, Quaternion.identity);
-                Rigidbody rigidbody = bullet.GetComponent<Rigidbody>();
                 Vector3 shootDirection = _nearestEnemy.transform.position - transform.position;
-
-                rigidbody.AddForce(shootDirection.normalized * _shootForce, ForceMode.Impulse);
+                bullet.Shot(shootDirection * _shootForce);
 
                 ResetShootTime();
             }

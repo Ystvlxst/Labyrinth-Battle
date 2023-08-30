@@ -128,3 +128,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
+  _rigidbody: {fileID: 7250845345117980538}
+  _wallHitEffect: {fileID: 19802634, guid: 71b02155078e4bf4e962f302d3675af2, type: 3}
