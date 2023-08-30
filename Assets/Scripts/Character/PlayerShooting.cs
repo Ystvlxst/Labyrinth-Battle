@@ -60,6 +60,8 @@ public class PlayerShooting : MonoBehaviour
 
                 ResetShootTime();
             }
+
+            transform.LookAt(_nearestEnemy.transform);
         }
     }
 
