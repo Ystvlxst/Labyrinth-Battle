@@ -13,6 +13,7 @@ public class AttackStateOneShooter : State
     [SerializeField] private Bullet _bulletTemplate;
     [SerializeField] private PatrollingState _patrollingState;
     [SerializeField] private Animator _animator;
+    [SerializeField] private float _y;
 
     private float _timeToShoot;
 
@@ -41,7 +42,7 @@ public class AttackStateOneShooter : State
 
     private void Attack()
     {
-        var bullet = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), Quaternion.identity);
+        var bullet = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
         Vector3 shootDirection = _target.position - bullet.transform.position;
         bullet.Shot(shootDirection * _forceAttack);
 

@@ -11,6 +11,7 @@ public class AttackStateTwoShooter : State
     [SerializeField] private Bullet _bulletTemplate;
     [SerializeField] private PatrollingState _patrollingState;
     [SerializeField] private Animator _animator;
+    [SerializeField] private float _y;
 
     private float _timeToShoot;
 
@@ -39,8 +40,8 @@ public class AttackStateTwoShooter : State
 
     private void Attack()
     {
-        var bullet1 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 5, transform.position.z), Quaternion.identity);
-        var bullet2 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 5, transform.position.z), Quaternion.identity);
+        var bullet1 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
+        var bullet2 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
 
         Vector3 shootDirection1 = new Vector3(_target.position.x - Random.Range(1, 10), _target.position.y, _target.position.z) - bullet1.transform.position;
         Vector3 shootDirection2 = new Vector3(_target.position.x + Random.Range(-1, -10), _target.position.y, _target.position.z) - bullet2.transform.position;

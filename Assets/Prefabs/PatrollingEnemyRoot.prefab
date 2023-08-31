@@ -1171,6 +1171,7 @@ MonoBehaviour:
   _path: {fileID: 8346814664234239339}
   _distanceToChangeGoal: 2
   _agent: {fileID: 6593887304180667455}
+  _animator: {fileID: 0}
 --- !u!114 &1157481262802184544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1203,7 @@ MonoBehaviour:
   - {fileID: 1157481262802184858}
   _randomTransition: 0
   _enemy: {fileID: 2125591976308347264}
+  _animator: {fileID: 0}
 --- !u!114 &6590698464639843330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1241,6 +1243,8 @@ MonoBehaviour:
   _shootDelay: 2
   _bulletTemplate: {fileID: 9207575592670018245, guid: 3c0722e41f91744b5aa8b236229002e8, type: 3}
   _patrollingState: {fileID: 4000103566963201955}
+  _animator: {fileID: 0}
+  _y: 10
 --- !u!1 &8294453089540671253
 GameObject:
   m_ObjectHideFlags: 0
