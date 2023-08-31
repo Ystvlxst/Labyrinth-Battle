@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
         HealthChanged?.Invoke();
     }
 
-    private void Die()
+    public void Die()
     {
         Instantiate(_dieEffect, new Vector3(transform.position.x, transform.position.y + 1.25f,
             transform.position.z), Quaternion.identity);

@@ -175,7 +175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2544332824072740507, guid: 49faaea0f811641149456823ee817434, type: 3}
       propertyPath: m_Name
-      value: PatrollingEnemyTwoShooter
+      value: PatrollingEnemyTwoShooter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3994420339992635561, guid: 49faaea0f811641149456823ee817434, type: 3}
       propertyPath: m_Value
@@ -287,7 +287,7 @@ MonoBehaviour:
   _randomTransition: 0
   _target: {fileID: 0}
   _agent: {fileID: 2250322556425947179}
-  _distanceToAttack: 8
+  _distanceToAttack: 25
   _forceAttack: 3
   _shootDelay: 1
   _bulletTemplate: {fileID: 6233619589718075571, guid: d6cd4ad676c7b45c39009ca1db206a3b, type: 3}
