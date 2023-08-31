@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 7266546349897824226, guid: d6cd4ad676c7b45c39009ca1db206a3b, type: 3}
       propertyPath: m_Name
-      value: Enemy3Bullet Variant
+      value: Enemy3Bullet Variant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9147281072270673435, guid: d6cd4ad676c7b45c39009ca1db206a3b, type: 3}
       propertyPath: m_RootOrder

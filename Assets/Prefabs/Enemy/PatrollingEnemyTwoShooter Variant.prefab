@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 4951973736007962271}
     - target: {fileID: 6590698464639843330, guid: 49faaea0f811641149456823ee817434, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6590698464639843330, guid: 49faaea0f811641149456823ee817434, type: 3}
       propertyPath: _targetState
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 4951973734861036564}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3020364392684429113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c446ae744ab2465f87ad6828e5d9918, type: 3}
   m_Name: 
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3020364392684429113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32ebcbf7f48547ebbbb1655a932acd1, type: 3}
   m_Name: 

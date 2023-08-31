@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912109588173104178, guid: b1f7b1116287c44b19c67e613e9f6b71, type: 3}
       propertyPath: m_Name
-      value: Enemy4Bulle
+      value: Enemy4Bulle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3625321772441277899, guid: b1f7b1116287c44b19c67e613e9f6b71, type: 3}
       propertyPath: m_RootOrder

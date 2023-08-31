@@ -130,3 +130,6 @@ MonoBehaviour:
   _damage: 15
   _rigidbody: {fileID: 7250845345117980538}
   _wallHitEffect: {fileID: 19802634, guid: 71b02155078e4bf4e962f302d3675af2, type: 3}
+  _shooterLayer:
+    serializedVersion: 2
+    m_Bits: 128
