@@ -12,6 +12,7 @@ public class AttackStateOneShooter : State
     [SerializeField] private float _shootDelay;
     [SerializeField] private Bullet _bulletTemplate;
     [SerializeField] private PatrollingState _patrollingState;
+    [SerializeField] private Animator _animator;
 
     private float _timeToShoot;
 
@@ -43,5 +44,8 @@ public class AttackStateOneShooter : State
         var bullet = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), Quaternion.identity);
         Vector3 shootDirection = _target.position - bullet.transform.position;
         bullet.Shot(shootDirection * _forceAttack);
+
+        if (_animator != null)
+            _animator.SetTrigger("Attack");
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class FollowPlayerState : State
 {
     [SerializeField] private Enemy _enemy;
+    [SerializeField] private Animator _animator;
 
     private Transform _player => _enemy.Player.transform;
     private NavMeshAgent _agent;
@@ -12,6 +13,9 @@ public class FollowPlayerState : State
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+
+        if (_animator != null)
+            _animator.SetTrigger("Run");
     }
 
     private void Update()

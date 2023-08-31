@@ -8,6 +8,7 @@ public class PatrollingState : State
     [SerializeField] private Transform _path;
     [SerializeField] private float _distanceToChangeGoal;
     [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private Animator _animator;
 
     private Transform[] _goals;
     private int _currentGoal = 0;
@@ -24,6 +25,9 @@ public class PatrollingState : State
     private void OnEnable()
     {
         UpdateCurrentGoal();
+
+        if (_animator != null)
+            _animator.SetTrigger("Run");
     }
 
     private void Start()
