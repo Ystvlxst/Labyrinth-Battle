@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEngine.EventSystems.EventTrigger;
 
-public class AttackState : State
+public class AttackStateTwoShooter : State
 {
     [SerializeField] private Transform _target;
     [SerializeField] private NavMeshAgent _agent;
@@ -40,8 +38,13 @@ public class AttackState : State
 
     private void Attack()
     {
-        var bullet = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), Quaternion.identity);
-        Vector3 shootDirection = _target.position - bullet.transform.position;
-        bullet.Shot(shootDirection * _forceAttack);
+        var bullet1 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), Quaternion.identity);
+        var bullet2 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), Quaternion.identity);
+
+        Vector3 shootDirection1 = new Vector3(_target.position.x - Random.Range(1, 10), _target.position.y, _target.position.z) - bullet1.transform.position;
+        Vector3 shootDirection2 = new Vector3(_target.position.x + Random.Range(-1, -10), _target.position.y, _target.position.z) - bullet2.transform.position;
+
+        bullet1.Shot(shootDirection1 * _forceAttack);
+        bullet2.Shot(shootDirection2 * _forceAttack);
     }
 }

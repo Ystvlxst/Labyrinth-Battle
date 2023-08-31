@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    private const int PlayerLayerNumber = 7;
     private const int WallLayerNumber = 10;
     private const int EnemyLayerNumber = 11;
-    private const int PlayerLayerNumber = 7;
+    private const int GroundLayerNumber = 12;
 
     [SerializeField] private float _damage;
     [SerializeField] private Rigidbody _rigidbody;
@@ -20,7 +21,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(other.gameObject.layer == WallLayerNumber)
+        if(other.gameObject.layer == WallLayerNumber || other.gameObject.layer == GroundLayerNumber)
         {
             Instantiate(_wallHitEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);

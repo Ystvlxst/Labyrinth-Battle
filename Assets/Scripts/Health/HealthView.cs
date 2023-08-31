@@ -6,10 +6,14 @@ public class HealthView : MonoBehaviour
     [SerializeField] private Health _health;
     [SerializeField] private Slider _healthSlider;
 
-    private void OnEnable()
+    private void Awake()
     {
         _healthSlider.maxValue = _health.Value;
+        _healthSlider.value = _health.Value;
+    }
 
+    private void OnEnable()
+    {
         _health.HealthChanged += OnHealthCanged;
     }
 

@@ -3,21 +3,18 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
 public class PatrollingState : State
 {
     [SerializeField] private Transform _path;
     [SerializeField] private float _distanceToChangeGoal;
+    [SerializeField] private NavMeshAgent _agent;
 
     private Transform[] _goals;
-    private NavMeshAgent _agent;
     private int _currentGoal = 0;
     public float StartSpeed { get; private set; }
     
     private void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
-
         if (_path == null)
             throw new NullReferenceException("Null path");
         

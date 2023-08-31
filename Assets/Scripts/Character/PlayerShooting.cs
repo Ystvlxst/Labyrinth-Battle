@@ -54,7 +54,7 @@ public class PlayerShooting : MonoBehaviour
 
             if (_timeToShoot <= 0)
             {
-                Bullet bullet = Instantiate(_bulletTamplate, new Vector3(transform.position.x, transform.position.y, transform.position.z + 2), Quaternion.identity);
+                Bullet bullet = Instantiate(_bulletTamplate, new Vector3(transform.position.x, transform.position.y + 7, transform.position.z), Quaternion.identity);
                 Vector3 shootDirection = _nearestEnemy.transform.position - bullet.transform.position;
                 bullet.Shot(shootDirection * _shootForce);
 
