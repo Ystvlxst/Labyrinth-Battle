@@ -34,6 +34,11 @@ public class AttackStateThreeShooter : State
             Attack();
             _timeToShoot = _shootDelay;
         }
+        else
+        {
+            if (_animator != null)
+                _animator.SetTrigger("Run");
+        }
 
         _timeToShoot -= Time.deltaTime;
     }
@@ -45,10 +50,10 @@ public class AttackStateThreeShooter : State
         var bullet3 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
         var bullet4 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
 
-        Vector3 shootDirection1 = new Vector3(_target.position.x - Random.Range(-15, -5), _target.position.y, _target.position.z) - bullet1.transform.position;
-        Vector3 shootDirection2 = new Vector3(_target.position.x + Random.Range(-4, 5), _target.position.y, _target.position.z) - bullet2.transform.position;
-        Vector3 shootDirection3 = new Vector3(_target.position.x - Random.Range(6, 15), _target.position.y, _target.position.z) - bullet1.transform.position;
-        Vector3 shootDirection4 = new Vector3(_target.position.x + Random.Range(16, 35), _target.position.y, _target.position.z) - bullet2.transform.position;
+        Vector3 shootDirection1 = new Vector3(_target.position.x - 2.5f, _target.position.y + 2, _target.position.z) - bullet1.transform.position;
+        Vector3 shootDirection2 = new Vector3(_target.position.x + 2.5f, _target.position.y + 2, _target.position.z) - bullet2.transform.position;
+        Vector3 shootDirection3 = new Vector3(_target.position.x - 7, _target.position.y + 2, _target.position.z) - bullet1.transform.position;
+        Vector3 shootDirection4 = new Vector3(_target.position.x + 7, _target.position.y + 2, _target.position.z) - bullet2.transform.position;
 
         bullet1.Shot(shootDirection1 * _forceAttack);
         bullet2.Shot(shootDirection2 * _forceAttack);

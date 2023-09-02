@@ -34,6 +34,11 @@ public class AttackStateTwoShooter : State
             Attack();
             _timeToShoot = _shootDelay;
         }
+        else
+        {
+            if (_animator != null)
+                _animator.SetTrigger("Run");
+        }
 
         _timeToShoot -= Time.deltaTime;
     }
@@ -43,8 +48,8 @@ public class AttackStateTwoShooter : State
         var bullet1 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
         var bullet2 = Instantiate(_bulletTemplate, new Vector3(transform.position.x, transform.position.y + _y, transform.position.z), Quaternion.identity);
 
-        Vector3 shootDirection1 = new Vector3(_target.position.x - Random.Range(1, 10), _target.position.y, _target.position.z) - bullet1.transform.position;
-        Vector3 shootDirection2 = new Vector3(_target.position.x + Random.Range(-1, -10), _target.position.y, _target.position.z) - bullet2.transform.position;
+        Vector3 shootDirection1 = new Vector3(_target.position.x - 10, _target.position.y + 2, _target.position.z) - bullet1.transform.position;
+        Vector3 shootDirection2 = new Vector3(_target.position.x + 10, _target.position.y + 2, _target.position.z) - bullet2.transform.position;
 
         bullet1.Shot(shootDirection1 * _forceAttack);
         bullet2.Shot(shootDirection2 * _forceAttack);

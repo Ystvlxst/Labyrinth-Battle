@@ -36,6 +36,11 @@ public class AttackStateOneShooter : State
             Attack();
             _timeToShoot = _shootDelay;
         }
+        else
+        {
+            if (_animator != null)
+                _animator.SetTrigger("Run");
+        }
 
         _timeToShoot -= Time.deltaTime;
     }
